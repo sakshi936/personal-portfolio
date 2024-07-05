@@ -53,7 +53,7 @@ function Hero() {
 						{sociallist.map((social, index) => (
 							<div className="bg-purple w-fit p-3 rounded-full hover:animate-bounce" key={index}>
 								<a href={`${social.link}`}>
-									<img src={`${social.icon}`} alt={`${social.alt}`} />
+									<Image src={`${social.icon}`} alt={`${social.alt}`} width={20} height={20} />
 								</a>
 							</div>
 						))}

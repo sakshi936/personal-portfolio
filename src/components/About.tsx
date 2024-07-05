@@ -22,9 +22,12 @@ function About() {
 						effortlessly.
 					</p>
 					<h2 className="mt-5 text-xl font-medium text-purple mb-5">Working to be better than yesterday!</h2>
-					<a href="#project">
-						<MagicButton title="View Projects" icon={<FaArrowDown />} position="right" />
-					</a>
+
+					<div className="w-fit">
+						<a href="#project">
+							<MagicButton title="View Projects" icon={<FaArrowDown />} position="right" />
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
