@@ -68,7 +68,7 @@ export const techStacks = [
 		techname: "Material UI",
 	},
 	{
-		icon: "	https://ui.aceternity.com/_next/image?url=%2Flogo.png&w=128&q=75",
+		icon: "/techstack/aceternity.webp",
 		techname: "Aceternity  UI",
 	},
 	{
