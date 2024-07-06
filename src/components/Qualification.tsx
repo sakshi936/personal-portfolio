@@ -15,7 +15,7 @@ interface qualifications {
 }
 function Qualification() {
 	return (
-		<div className=" py-20 w-full  px-1 md:px-14">
+		<div className=" py-20 w-full  px-1 md:px-20">
 			<div className="text-center">
 				<h1 className="text-5xl md:text-6xl  font-bold">
 					My <span className="text-purple">Education</span>

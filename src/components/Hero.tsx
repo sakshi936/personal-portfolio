@@ -6,6 +6,7 @@ import { Spotlight } from "./ui/Spotlight";
 import Typewriter from "typewriter-effect";
 import { sociallist } from "@/data/data";
 import Image from "next/image";
+import Link from "next/link";
 
 function Hero() {
 	return (
@@ -46,15 +47,15 @@ function Hero() {
 							/>
 						</h2>
 					</div>
-					<a href="#about" className="flex justify-center mt-4">
+					<Link href="#about" className="flex justify-center mt-4">
 						<MagicButton title="About me " icon={<FaArrowDown />} position="right" />
-					</a>
+					</Link>
 					<div className="flex gap-4 mt-8 md:hidden">
 						{sociallist.map((social, index) => (
 							<div className="bg-purple w-fit p-3 rounded-full hover:animate-bounce" key={index}>
-								<a href={`${social.link}`}>
+								<Link href={`${social.link}`}>
 									<Image src={`${social.icon}`} alt={`${social.alt}`} width={20} height={20} />
-								</a>
+								</Link>
 							</div>
 						))}
 					</div>

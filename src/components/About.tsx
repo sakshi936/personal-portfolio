@@ -2,6 +2,7 @@ import React from "react";
 import MagicButton from "./ui/MagicButton";
 import { FaArrowDown } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 function About() {
 	return (
@@ -24,9 +25,9 @@ function About() {
 					<h2 className="mt-5 text-xl font-medium text-purple mb-5">Working to be better than yesterday!</h2>
 
 					<div className="w-fit">
-						<a href="#project">
+						<Link href="#project">
 							<MagicButton title="View Projects" icon={<FaArrowDown />} position="right" />
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>

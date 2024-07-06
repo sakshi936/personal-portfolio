@@ -7,11 +7,12 @@ import Image from "next/image";
 
 function Contact() {
 	const [state, handleSubmit] = useForm("xpwazpyn");
+
 	if (state.succeeded) {
-		toast("Event has been created.");
+		toast("thanks for connecting!🤝");
 	}
 	return (
-		<div className="mt-20 pt-10 py-5 px-1 md:px-14 " id="contact">
+		<div className="mt-20 pt-10 py-5 px-1 md:px-20 " id="contact">
 			<h1 className="text-5xl md:text-6xl font-bold text-center">
 				<span className="text-purple">Contact</span> Me
 			</h1>
@@ -35,7 +36,7 @@ function Contact() {
 						<ValidationError prefix="Email" field="email" errors={state.errors} />
 						<textarea id="message" name="message" required placeholder="Message*" className="bg-slate-900 w-full rounded-lg px-3 py-2 " />
 						<ValidationError prefix="Message" field="message" errors={state.errors} />
-						<button type="submit" disabled={state.submitting} className="bg-purple px-5 py-1 rounded-lg text-gray-300 flex justify-center items-center gap-2 ">
+						<button type="submit" disabled={state.submitting} className="bg-purple hover:bg-violet-800 px-5 py-1 rounded-lg text-gray-300 flex justify-center items-center gap-2 ">
 							Send
 							<FaLocationArrow />
 						</button>

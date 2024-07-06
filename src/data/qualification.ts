@@ -65,7 +65,11 @@ export const techStacks = [
 	},
 	{
 		icon: "/techstack/MUI.svg",
-		techname: "MaterialUI",
+		techname: "Material UI",
+	},
+	{
+		icon: "	https://ui.aceternity.com/_next/image?url=%2Flogo.png&w=128&q=75",
+		techname: "Aceternity  UI",
 	},
 	{
 		icon: "/techstack/node.svg",
@@ -79,6 +83,10 @@ export const techStacks = [
 	{
 		icon: "/techstack/Netlyfy.svg",
 		techname: "Netlify",
+	},
+	{
+		icon: "/techstack/vercel.svg",
+		techname: "Vercel",
 	},
 
 	{

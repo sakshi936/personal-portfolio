@@ -18,7 +18,7 @@ export const projects = [
 	{
 		id: 4,
 		title: "Space Music Academy",
-		des: "A Next.js project of A Music Academy website using TypeScript, Tailwind and Acertenity ui for UI",
+		des: "A Next.js project of A Music Academy website using TypeScript, Tailwind and Aceternity  ui for user iterface",
 		img: "/projects/Music.svg",
 		link: "https://space-music-academy-nextjs.vercel.app/",
 		gitlink: "https://github.com/sakshi936/Space-Music-Academy",

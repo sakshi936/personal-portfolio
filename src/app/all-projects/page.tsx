@@ -4,6 +4,7 @@ import React from "react";
 import { PinContainer } from "@/components/ui/3d-pin";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Project {
 	id: number;
@@ -29,9 +30,9 @@ function AllProjects() {
 							<Image src={img} alt="img" width={100} height={100} className=" w-full h-[150px] mt-4 rounded-2xl bg-white-100" />
 							{/* <div className="flex flex-1 w-full h-[150px] rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple to-blue-500" /> */}
 							<div className="flex justify-between items-center mt-4">
-								<a href={gitlink} className="px-4 py-2 rounded-xl text-base font-semibold dark:text-purple ">
+								<Link href={gitlink} className="px-4 py-2 rounded-xl text-base font-semibold dark:text-purple ">
 									Source Code →
-								</a>
+								</Link>
 							</div>
 						</div>
 					</PinContainer>
