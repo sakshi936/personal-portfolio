@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form name="contact" method="POST" data-netlify="true" action="/thank-you">
+			<input id="fullname" type="text" name="Fullname" placeholder="FullName*" required onChange="{handleChange}" className="bg-slate-900 w-full rounded-lg px-3 py-2 " />
+
+			<input id="email" type="email" name="email" placeholder="Email*" required onChange="{handleChange}" className="bg-slate-900 w-full rounded-lg px-3 py-2 " />
+
+			<textarea id="message" name="message" required placeholder="Message*" onChange="{handleChange}" className="bg-slate-900 w-full rounded-lg px-3 py-2 " />
+
+			<button type="submit" className="bg-purple hover:bg-violet-800 px-5 py-1 rounded-lg text-gray-300 flex justify-center items-center gap-2 ">
+				Send
+				<FaLocationArrow />
+			</button>
+		</form>
+	</body>
+</html>
