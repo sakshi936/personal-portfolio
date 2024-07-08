@@ -1,24 +1,16 @@
 "use client";
-
+import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { toast } from "sonner";
 import { FaLocationArrow } from "react-icons/fa";
 import Image from "next/image";
-import { ChangeEvent, useState } from "react";
-
-interface FormData {
-	name: string;
-	email: string;
-	message: string;
-}
 
 function Contact() {
-	const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+	const [state, handleSubmit] = useForm("xpwazpyn");
 
-	const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-		const { name, value } = e.target;
-		setFormData({ ...formData, [name]: value });
-	};
+	if (state.succeeded) {
+		toast("thanks for connecting!🤝");
+	}
 	return (
 		<div className="mt-20 pt-10 py-5 px-1 md:px-20 " id="contact">
 			<h1 className="text-5xl md:text-6xl font-bold text-center">
@@ -37,15 +29,14 @@ function Contact() {
 						from you!👂 <br />
 						🎉 Let&apos;s connect and create something amazing together 🤝
 					</p>
+					<form onSubmit={handleSubmit} className="mt-8 flex flex-col justify-center items-end gap-y-4">
+						<input id="fullname" type="text" name="Fullname" placeholder="FullName*" required className="bg-slate-900 w-full rounded-lg px-3 py-2 " />
 
-					<form name="contact" method="POST" data-netlify="true" action="/thank-you">
-						<input id="fullname" type="text" name="Fullname" placeholder="FullName*" required onChange={handleChange} className="bg-slate-900 w-full rounded-lg px-3 py-2 " />
-
-						<input id="email" type="email" name="email" placeholder="Email*" required onChange={handleChange} className="bg-slate-900 w-full rounded-lg px-3 py-2 " />
-						{/* <ValidationError prefix="Email" field="email" errors={state.errors} /> */}
-						<textarea id="message" name="message" required placeholder="Message*" onChange={handleChange} className="bg-slate-900 w-full rounded-lg px-3 py-2 " />
-						{/* <ValidationError prefix="Message" field="message" errors={state.errors} /> */}
-						<button type="submit" className="bg-purple hover:bg-violet-800 px-5 py-1 rounded-lg text-gray-300 flex justify-center items-center gap-2 ">
+						<input id="email" type="email" name="email" placeholder="Email*" required className="bg-slate-900 w-full rounded-lg px-3 py-2 " />
+						<ValidationError prefix="Email" field="email" errors={state.errors} />
+						<textarea id="message" name="message" required placeholder="Message*" className="bg-slate-900 w-full rounded-lg px-3 py-2 " />
+						<ValidationError prefix="Message" field="message" errors={state.errors} />
+						<button type="submit" disabled={state.submitting} className="bg-purple hover:bg-violet-800 px-5 py-1 rounded-lg text-gray-300 flex justify-center items-center gap-2 ">
 							Send
 							<FaLocationArrow />
 						</button>
