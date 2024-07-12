@@ -1,6 +1,6 @@
 "use client";
 
-import { qualifications } from "@/data/qualification";
+import { qualifications } from "@/data/data";
 import React from "react";
 import { Button } from "./ui/moving-border";
 import Image from "next/image";

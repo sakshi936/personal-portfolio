@@ -13,7 +13,7 @@ function About() {
 			</h1>
 
 			<div className="flex ">
-				<Image src="/coding2.svg" alt="me" width={500} height={500} className="hidden md:block" />
+				<Image src="/images/coding2.svg" alt="me" width={500} height={500} className="hidden md:block" />
 				<div className="px-4 md:px-10 py-20  md:py-28">
 					<h1 className="text-xl font-semibold ">I&apos;m Sakshi&#44;</h1>
 					<p className="text-slate-400 mt-3">

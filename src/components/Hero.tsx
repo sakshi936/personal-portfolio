@@ -27,7 +27,7 @@ function Hero() {
 
 				<div className="flex flex-col justify-center items-start pl-10 md:pl-[15rem] m-0">
 					<div className="flex justify-center items-end">
-						<Image src="/waving-hand.gif" alt="hy" width={50} height={50} className="w-[50px]" />
+						<Image src="/images/waving-hand.gif" alt="hy" width={50} height={50} className="w-[50px]" />
 						<h3 className="text-2xl font-semibold">Hi There&#44; </h3>
 					</div>
 					<h1 className="text-6xl font-extrabold">I&apos;m Sakshi Pandey</h1>

@@ -1,5 +1,5 @@
 "use client";
-import { projects } from "@/data/projects";
+import { projects } from "@/data/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import MagicButton from "./ui/MagicButton";

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import navItems from "@/data/navItems";
+import navItems from "@/data/data";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Toaster } from "@/components/ui/sonner";
 import Footer from "@/components/Footer";
