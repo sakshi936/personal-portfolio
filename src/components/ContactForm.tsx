@@ -21,7 +21,7 @@ function ContactForm() {
 
 	return (
 		<div>
-			<form name="contact" action={"/success"} method="POST" data-netlify="true">
+			<form name="contact" method="POST" data-netlify="true">
 				<input type="hidden" name="form-name" value="contact" />
 				<p>
 					{/* <input type="text" name="name" id="name" /> <br /> */}
