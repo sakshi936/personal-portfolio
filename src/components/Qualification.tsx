@@ -2,7 +2,7 @@
 
 import { qualifications } from "@/data/data";
 import React from "react";
-import { Button } from "../ui/moving-border";
+import { Button } from "./ui/moving-border";
 import Image from "next/image";
 
 interface qualifications {

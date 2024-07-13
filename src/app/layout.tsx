@@ -5,8 +5,8 @@ import { ThemeProvider } from "next-themes";
 import navItems from "@/data/data";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Toaster } from "@/components/ui/sonner";
-import Footer from "@/components/pages/Footer";
-import Social from "@/components/pages/Social";
+import Footer from "@/components/Footer";
+import Social from "@/components/Social";
 
 const inter = Inter({ subsets: ["latin"] });
 

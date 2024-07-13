@@ -1,8 +1,8 @@
 "use client";
 
 import { FaAlignRight, FaArrowDown, FaLocationArrow } from "react-icons/fa";
-import MagicButton from "../ui/MagicButton";
-import { Spotlight } from "../ui/Spotlight";
+import MagicButton from "./ui/MagicButton";
+import { Spotlight } from "./ui/Spotlight";
 import Typewriter from "typewriter-effect";
 import { sociallist } from "@/data/data";
 import Image from "next/image";

@@ -1,8 +1,8 @@
 "use client";
 import { projects } from "@/data/data";
 import React from "react";
-import { PinContainer } from "../ui/3d-pin";
-import MagicButton from "../ui/MagicButton";
+import { PinContainer } from "./ui/3d-pin";
+import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
