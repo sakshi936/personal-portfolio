@@ -1,27 +1,24 @@
 import React from "react";
 
 function ContactForm() {
-	// const handleSubmit = (e) => {
-	// 	const data = {
-	// 	  name: e.target.name.value,
-	// 	  email: e.target.email.value,
-	// 	  message: e.target.message.value,
-	// 	};
+	const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+		event.preventDefault();
 
-	// 	fetch('/', {
-	// 	  method: 'POST',
-	// 	  headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-	// 	  body: encode({ 'form-name': 'contact-form', ...data }),
-	// 	})
-	// 	  .then(() => alert('Success!'))
-	// 	  .catch((error) => alert(error));
+		const myForm = event.target as HTMLFormElement;
+		const formData = new FormData(myForm);
 
-	// 	e.preventDefault();
-	//   };
+		fetch("/", {
+			method: "POST",
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: new URLSearchParams(formData as any).toString(),
+		})
+			.then(() => alert("Form successfully submitted"))
+			.catch((error) => alert(error));
+	};
 
 	return (
 		<div>
-			<form name="contact" method="POST" data-netlify="true">
+			<form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
 				<input type="hidden" name="form-name" value="contact" />
 				<p>
 					{/* <input type="text" name="name" id="name" /> <br /> */}
