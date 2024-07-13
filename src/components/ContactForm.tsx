@@ -7,7 +7,7 @@ function ContactForm() {
 		const myForm = event.target as HTMLFormElement;
 		const formData = new FormData(myForm);
 
-		fetch("/", {
+		fetch("/__forms.html", {
 			method: "POST",
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
 			body: new URLSearchParams(formData as any).toString(),
@@ -18,8 +18,8 @@ function ContactForm() {
 
 	return (
 		<div>
-			<form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-				<input type="hidden" name="form-name" value="contact" />
+			<form name="contact" onSubmit={handleSubmit}>
+				<input type="hidden" name="contact" value="contact" />
 				<p>
 					{/* <input type="text" name="name" id="name" /> <br /> */}
 					<label htmlFor="name"> Name: </label> <br />
