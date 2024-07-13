@@ -1,5 +1,5 @@
 import React from "react";
-import MagicButton from "./ui/MagicButton";
+import MagicButton from "../ui/MagicButton";
 import { FaArrowDown } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";

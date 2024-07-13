@@ -1,10 +1,10 @@
-import Hero from "@/components/Hero";
-import RecentProjects from "@/components/RecentProjects";
+import Hero from "@/components/pages/Hero";
+import RecentProjects from "@/components/pages/RecentProjects";
 import Image from "next/image";
-import Qualification from "@/components/Qualification";
-import TechStack from "@/components/TechStack";
-import Contact from "@/components/Contact";
-import About from "@/components/About";
+import Qualification from "@/components/pages/Qualification";
+import TechStack from "@/components/pages/TechStack";
+import Contact from "@/components/pages/Contact";
+import About from "@/components/pages/About";
 
 export default function Home() {
 	return (

@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { BackgroundGradient } from "./ui/background-gradient";
-import GradientBorderButton from "./ui/GradientBorderButton";
+import { BackgroundGradient } from "../ui/background-gradient";
+import GradientBorderButton from "../ui/GradientBorderButton";
 import { techStacks } from "@/data/data";
 
 function TechStack() {
