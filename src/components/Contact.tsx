@@ -4,13 +4,14 @@ import { useForm, ValidationError } from "@formspree/react";
 import { toast } from "sonner";
 import { FaLocationArrow } from "react-icons/fa";
 import Image from "next/image";
+import ContactForm from "./ContactForm";
 
 function Contact() {
-	const [state, handleSubmit] = useForm("xpwazpyn");
+	// const [state, handleSubmit] = useForm("xpwazpyn");
 
-	if (state.succeeded) {
-		toast("thanks for connecting!🤝");
-	}
+	// if (state.succeeded) {
+	// 	toast("thanks for connecting!🤝");
+	// }
 	return (
 		<div className="mt-20 pt-10 py-5 px-1 md:px-20 " id="contact">
 			<h1 className="text-5xl md:text-6xl font-bold text-center">
@@ -29,7 +30,7 @@ function Contact() {
 						from you!👂 <br />
 						🎉 Let&apos;s connect and create something amazing together 🤝
 					</p>
-					<form onSubmit={handleSubmit} className="mt-8 flex flex-col justify-center items-end gap-y-4">
+					{/* <form onSubmit={handleSubmit} className="mt-8 flex flex-col justify-center items-end gap-y-4">
 						<input id="fullname" type="text" name="Fullname" placeholder="FullName*" required className="bg-slate-900 w-full rounded-lg px-3 py-2 " />
 
 						<input id="email" type="email" name="email" placeholder="Email*" required className="bg-slate-900 w-full rounded-lg px-3 py-2 " />
@@ -40,7 +41,8 @@ function Contact() {
 							Send
 							<FaLocationArrow />
 						</button>
-					</form>
+					</form> */}
+					<ContactForm />
 				</div>
 			</div>
 		</div>
