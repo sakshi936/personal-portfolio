@@ -4,7 +4,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import { toast } from "sonner";
 import { FaLocationArrow } from "react-icons/fa";
 import Image from "next/image";
-import ContactForm from "./ContactForm";
+import FeedbackForm from "./FeedbackForm";
 
 function Contact() {
 	// const [state, handleSubmit] = useForm("xpwazpyn");
@@ -42,7 +42,7 @@ function Contact() {
 							<FaLocationArrow />
 						</button>
 					</form> */}
-					<ContactForm />
+					<FeedbackForm />
 				</div>
 			</div>
 		</div>
